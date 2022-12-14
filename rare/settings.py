@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'rareupapi',
+    'rareapi',
 ]
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000',
