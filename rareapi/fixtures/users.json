@@ -12,7 +12,7 @@
             "active": false,
             "is_staff": true
         }
-    }
+    },
     {
         "model": "rareapi.user",
         "pk": 2,
