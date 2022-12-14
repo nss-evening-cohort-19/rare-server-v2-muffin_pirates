@@ -1,0 +1,50 @@
+[
+  {
+    "model": "rareapi.post",
+    "pk": 1,
+    "fields": {
+      "user_id": 1,
+      "category_id": 1,
+      "title": "Harry Potter",
+      "publication_date": "2022-12-25 12:00:00pm",
+      "image_url": "https://www.peterharrington.co.uk/blog/wp-content/uploads/2018/03/HP_4-scaled-e1656494430709.jpg",
+      "content": "J. K. Rowlings Harry Potter series has gained immense popularity, critical acclaim and commercial success worldwide, and first editions of her books have very quickly become collectable. By far the most valuable book in the series is the first, Harry Potter and the Philosophers Stone, published on 30 June 1997 by Bloomsbury in London. But to have any real collectable value, it has to be a copy of the first edition, first impression (also known as the first printing). This means the very first batch of books off the press, of which there were only a few thousand.  Reprints of Philosophers Stone (and even first editions of the later books in the series) have much lower values, in part because so many more of them were printed."
+    }
+  },
+  {
+    "model": "rareapi.post",
+    "pk": 1,
+    "fields": {
+      "user_id": 2,
+      "category_id": 2,
+      "title": "Avatar",
+      "publication_date": "2022-11-16 1:00:00pm",
+      "image_url": "https://image.cnbcfm.com/api/v1/image/105897632-1557241558937avatar-e1541360922907.jpg?v=1664130328&w=630&h=354&ffmt=webp&vtcrop=y",
+      "content": "The Navi return to the big screen this weekend Disneylooks to reignite interest in its newly acquired Avatar franchise, three months before the debut of the long-delayed sequel, Avatar The Way of Water. Bringing the highest-grossing film of all time back to theaters has two purposes for Disney: drum up excitement for “The Way of Water” and fill a vacant spot on the theatrical calendar. The sequel is one of four due over the next decade."
+    }
+  },
+  {
+    "model": "rareapi.post",
+    "pk": 1,
+    "fields": {
+      "user_id": 1,
+      "category_id": 3,
+      "title": "Killer Whales",
+      "publication_date": "2022-06-19 05:00:00am",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/220px-Killerwhales_jumping.jpg",
+      "content": "The orca or killer whale (Orcinus orca) is a toothed whale belonging to the oceanic dolphin family, of which it is the largest member. It is the only extant species in the genus Orcinus and is recognizable by its black-and-white patterned body. A cosmopolitan species, orcas can be found in all of the world's oceans in a variety of marine environments, from Arctic and Antarctic regions to tropical seas."
+    }
+  },
+  {
+    "model": "rareapi.post",
+    "pk": 1,
+    "fields": {
+      "user_id": 2,
+      "category_id": 4,
+      "title": "Cacti",
+      "publication_date": "2022-12-25 12:00:00pm",
+      "image_url": "https://dsk4t6ov5vq8n.cloudfront.net/uploads/PBS-Articles/2022/The-Green-Planet/Episode-4-photos/Sized-photos/The_Green_Planet_04_029.jpg?mtime=20220629155429",
+      "content": "Cacti are a type of plant that is known for its thick, fleshy stem and its spines. These plants are native to the deserts of North and South America, and have adapted to the dry, hot climate by storing water in their stems. Cacti come in a wide variety of shapes and sizes, and they can be found in both arid and semi-arid habitats all over the world."
+    }
+  }
+]
