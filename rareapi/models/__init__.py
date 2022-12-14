@@ -1,4 +1,4 @@
 from .user import User
 from .post import Post
 from .category import Category
-from .comments import Comments
+from .comments import Comment
