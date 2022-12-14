@@ -1,0 +1,30 @@
+[
+    {
+        "model": "rareapi.category",
+        "pk": 1,
+        "fields": {
+            "label": "Social Responsibility"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 2,
+        "fields": {
+            "label": "Life"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 3,
+        "fields": {
+            "label": "Love"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 4,
+        "fields": {
+            "label": "Good Times"
+        }
+    }
+]
