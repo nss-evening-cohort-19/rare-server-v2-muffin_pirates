@@ -9,5 +9,5 @@ class Comment(models.Model):
   content = models.CharField(max_length=1000)
   created_on = models.DateTimeField(auto_now=True)
 
-  def __str__(self):
-      return self.name
+
+  print("Hello")
