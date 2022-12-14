@@ -11,6 +11,3 @@ class Post(models.Model):
     image_url = models.URLField(max_length=200)
     content = models.CharField(max_length=1000)
     objects = models.Manager()
-
-    def __str__(self):
-        return self.name

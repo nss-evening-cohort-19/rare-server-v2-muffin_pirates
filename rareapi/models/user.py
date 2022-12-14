@@ -9,6 +9,3 @@ class User(models.Model):
     created_on = models.DateTimeField(auto_now=True)
     active = models.BooleanField()
     is_staff = models.BooleanField()
-
-def __str__(self):
-    return self.name
