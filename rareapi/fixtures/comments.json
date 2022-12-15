@@ -1,22 +1,22 @@
 [
   {
-    "models": "rareapi.comment",
+    "model": "rareapi.comment",
     "pk": 1,
     "fields": {
-      "author_id": 1,
-      "post_id": 1,
+      "author": 1,
+      "post": 1,
       "content": "I am a comment",
-      "created_on": "2022-13-22-6-54"
+      "created_on": "2022-12-22"
     }
   },
   {
-    "models": "rareapi.comment",
+    "model": "rareapi.comment",
     "pk": 2,
     "fields": {
-      "author_id": 2,
-      "post_id": 2,
+      "author": 2,
+      "post": 2,
       "content": "I am comment #2",
-      "created_on": "2022-13-22-6-54"
+      "created_on": "2022-12-22"
     }
   }
 ]
