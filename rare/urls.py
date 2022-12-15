@@ -19,13 +19,13 @@ from django.urls import path
 from django.conf.urls import include
 from rest_framework import routers
 # from rareapi.views import PostView
-# from rareapi.views import UserView
+from rareapi.views import UserView
 from rareapi.views import CategoryView
 # from rareapi.views import CommentView
 
 router = routers.DefaultRouter(trailing_slash=False)
 # router.register(r'posts', PostView, 'post')
-# router.register(r'users', UserView, 'user')
+router.register(r'users', UserView, 'user')
 router.register(r'categories', CategoryView, 'category')
 # router.register(r'comments', CommentView, 'comment')
 
