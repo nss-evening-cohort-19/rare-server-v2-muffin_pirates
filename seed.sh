@@ -1,10 +1,10 @@
 #!/bin/bash
 rm -rf rareapi/migrations
 rm db.sqlite3
-python3 manage.py migrate
-python3 manage.py makemigrations rareapi
-python3 manage.py migrate rareapi
-python3 manage.py loaddata users
-python3 manage.py loaddata category
-python3 manage.py loaddata post
-python3 manage.py loaddata comments
+python manage.py migrate
+python manage.py makemigrations rareapi
+python manage.py migrate rareapi
+python manage.py loaddata users
+python manage.py loaddata category
+python manage.py loaddata post
+python manage.py loaddata comments

@@ -6,7 +6,7 @@ from rareapi.models.category import Category
 
 class CategoryView(ViewSet):
     def retrieve(self, request, pk):
-        """Handle GET requests for category
+        """Handle GET requests for a single category
         """
         try:
             categories = Category.objects.get(pk=pk)
@@ -26,15 +26,14 @@ class CategoryView(ViewSet):
         serializer = CategorySerializer(categories, many=True)
         return Response(serializer.data)
 
-    def create(self, request, pk):
-        """Handle GET requests for category
+    def create(self, request):
+        """Handle create requests for category
         """
-        try:
-            categories = Category.objects.get(pk=pk)
-            serializer = CategorySerializer(categories)
-            return Response(serializer.data)
-        except Category.DoesNotExist as ex:
-            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+        category = Category.objects.create(
+                label=request.data["label"],
+            )
+        serializer = CategorySerializer(category)
+        return Response(serializer.data)
 
     def update(self, request, pk):
         """Handle PUT requests for a category
