@@ -3,8 +3,8 @@
     "model": "rareapi.post",
     "pk": 1,
     "fields": {
-      "user_id": 1,
-      "category_id": 1,
+      "user": 1,
+      "category": 1,
       "title": "Harry Potter",
       "publication_date": "2022-12-25",
       "image_url": "https://www.peterharrington.co.uk/blog/wp-content/uploads/2018/03/HP_4-scaled-e1656494430709.jpg",
@@ -15,8 +15,8 @@
     "model": "rareapi.post",
     "pk": 2,
     "fields": {
-      "user_id": 2,
-      "category_id": 2,
+      "user": 2,
+      "category": 2,
       "title": "Avatar",
       "publication_date": "2022-11-16",
       "image_url": "https://image.cnbcfm.com/api/v1/image/105897632-1557241558937avatar-e1541360922907.jpg?v=1664130328&w=630&h=354&ffmt=webp&vtcrop=y",
@@ -27,8 +27,8 @@
     "model": "rareapi.post",
     "pk": 3,
     "fields": {
-      "user_id": 1,
-      "category_id": 3,
+      "user": 1,
+      "category": 3,
       "title": "Killer Whales",
       "publication_date": "2022-06-19",
       "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/220px-Killerwhales_jumping.jpg",
@@ -39,8 +39,8 @@
     "model": "rareapi.post",
     "pk": 4,
     "fields": {
-      "user_id": 2,
-      "category_id": 4,
+      "user": 2,
+      "category": 4,
       "title": "Cacti",
       "publication_date": "2022-12-25",
       "image_url": "https://dsk4t6ov5vq8n.cloudfront.net/uploads/PBS-Articles/2022/The-Green-Planet/Episode-4-photos/Sized-photos/The_Green_Planet_04_029.jpg?mtime=20220629155429",
