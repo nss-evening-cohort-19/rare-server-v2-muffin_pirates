@@ -16,10 +16,13 @@ Including another URLconf
 from django.conf.urls import include
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import include
 from rest_framework import routers
+from rareapi.views import UserView, PostView
 
 router = routers.DefaultRouter(trailing_slash=False)
-# router.register(r'posts', PostView, 'posts')
+router.register(r'users', UserView, 'users')
+router.register(r'posts', PostView, 'posts')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
