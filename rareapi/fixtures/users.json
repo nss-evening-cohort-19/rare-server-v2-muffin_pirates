@@ -3,6 +3,7 @@
         "model": "rareapi.user",
         "pk": 1,
         "fields": {
+            "uid": 12345,
             "first_name": "James",
             "last_name": "Chandler",
             "bio": "Sesame Street fanatic and lover of dancing",
@@ -17,6 +18,7 @@
         "model": "rareapi.user",
         "pk": 2,
         "fields": {
+            "uid": 23456,
             "first_name": "Kess",
             "last_name": "Chandler",
             "bio": "Dumpster to Diva, Ruler of all, Cat for the ages",
