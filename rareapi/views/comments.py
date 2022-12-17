@@ -72,3 +72,9 @@ class CommentView(ViewSet):
     
     comment.save()
     return Response(None, status=status.HTTP_204_NO_CONTENT)
+  
+  def destroy(self, request, pk):
+    comment = Comment.objects.get(pk=pk)
+    comment.delete()
+    
+    return Response(None, status=status.HTTP_204_NO_CONTENT)
