@@ -3,28 +3,35 @@
         "model": "rareapi.category",
         "pk": 1,
         "fields": {
-            "label": "Social Responsibility"
+            "label": "News"
         }
     },
     {
         "model": "rareapi.category",
         "pk": 2,
         "fields": {
-            "label": "Life"
+            "label": "Business"
         }
     },
     {
         "model": "rareapi.category",
         "pk": 3,
         "fields": {
-            "label": "Love"
+            "label": "Hobbies"
         }
     },
     {
         "model": "rareapi.category",
         "pk": 4,
         "fields": {
-            "label": "Good Times"
+            "label": "Education"
+        }
+    },
+    {
+        "model": "rareapi.category",
+        "pk": 5,
+        "fields": {
+            "label": "Other"
         }
     }
 ]

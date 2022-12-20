@@ -27,7 +27,7 @@ class PostView(ViewSet):
         posts = Post.objects.all()
         user = request.query_params.get('user', None)
         if user is not None:
-            posts = posts.filter(user_id=user)
+            posts = posts.filter(uid=user.uid)
         category = request.query_params.get('category', None)
         if category is not None:
             posts = posts.filter(category_id=category)
@@ -35,13 +35,11 @@ class PostView(ViewSet):
         return Response(serializer.data)
 
     def create(self, request):
-
         user = User.objects.get(uid=request.data["user"])
         category = Category.objects.get(pk=request.data["category"])
 
         post = Post.objects.create(
             title=request.data["title"],
-            publication_date=request.data["publication_date"],
             image_url=request.data["image_url"],
             content=request.data["content"],
             user=user,
