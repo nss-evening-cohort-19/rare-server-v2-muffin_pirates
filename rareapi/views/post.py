@@ -35,13 +35,12 @@ class PostView(ViewSet):
         return Response(serializer.data)
 
     def create(self, request):
-
+        import pdb; pdb.set_trace();
         user = User.objects.get(uid=request.data["user"])
         category = Category.objects.get(pk=request.data["category"])
 
         post = Post.objects.create(
             title=request.data["title"],
-            publication_date=request.data["publication_date"],
             image_url=request.data["image_url"],
             content=request.data["content"],
             user=user,

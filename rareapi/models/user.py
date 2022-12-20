@@ -13,4 +13,4 @@ class User(models.Model):
     is_staff = models.BooleanField(default=False)
 
     def __str__(self):
-        return self.name
+        return self.first_name + self.last_name
