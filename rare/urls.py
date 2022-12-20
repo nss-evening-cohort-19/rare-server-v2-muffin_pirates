@@ -19,7 +19,7 @@ from django.urls import path
 from rareapi.views import check_user, register_user
 from django.conf.urls import include
 from rest_framework import routers
-from rareapi.views import UserView, PostView, CategoryView,CommentView
+from rareapi.views import UserView, PostView, CategoryView, CommentView, PostCommentView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'users', UserView, 'users')
@@ -32,4 +32,5 @@ urlpatterns = [
     path('checkuser', check_user),
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
+    path('post-comments/<int:post_id>/', PostCommentView.as_view(), name='posts')
 ]

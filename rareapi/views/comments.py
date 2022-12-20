@@ -4,6 +4,7 @@ from rest_framework.response import Response
 from rest_framework import serializers, status
 from rareapi.models import Comment, User, Post
 from rest_framework.decorators import action
+from rest_framework import generics
 
 class CommentSerializer(serializers.ModelSerializer):
   """JSON serializer for comments"""
@@ -32,9 +33,9 @@ class CommentView(ViewSet):
       """
       comments = Comment.objects.all()
       
-      post_comments = request.query_params.get('post_id', None)
-      if post_comments is not None:
-        comments = comments.filter(post_id = post_comments)
+      post = request.query_params.get('post', None)
+      if post is not None:
+        comments = comments.filter(post_id=post)
       serializer = CommentSerializer(comments, many=True)
       
       return Response(serializer.data)
@@ -78,3 +79,9 @@ class CommentView(ViewSet):
     comment.delete()
     
     return Response(None, status=status.HTTP_204_NO_CONTENT)
+
+class PostCommentView(generics.ListCreateAPIView):
+  serializer_class = CommentSerializer
+  def get_queryset(self):
+    post_id = self.kwargs['post_id']
+    return Comment.objects.filter(post__id=post_id)
