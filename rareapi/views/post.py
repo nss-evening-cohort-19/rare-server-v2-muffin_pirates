@@ -36,7 +36,7 @@ class PostView(ViewSet):
 
     def create(self, request):
 
-        user = User.objects.get(pk=request.data["user"])
+        user = User.objects.get(uid=request.data["user"])
         category = Category.objects.get(pk=request.data["category"])
 
         post = Post.objects.create(
